@@ -1,153 +1,152 @@
 <!DOCTYPE html>
 <html lang="uz">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FraudX – AI Fraud Detection</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            color: #222;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FraudX – AI Fraud Detection</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<style>
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {font-family:'Roboto',sans-serif; background:#f9f9f9; color:#222; line-height:1.6;}
 
-        header {
-            background: #1a1a1a;
-            color: #fff;
-            padding: 40px;
-            text-align: center;
-        }
+    header {background:#0d6efd; color:#fff; text-align:center; padding:80px 20px;}
+    header h1 {font-family:'Playfair Display', serif; font-size:3rem; margin-bottom:10px;}
+    header p {font-size:1.2rem; opacity:0.9;}
 
-        section {
-            padding: 40px 8%;
-            margin: 20px auto;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
+    section {padding:60px 8%; margin:30px auto; background:#fff; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.1);}
+    section h2 {color:#0d6efd; font-family:'Playfair Display', serif; margin-bottom:25px; font-size:2rem;}
+    section h3 {margin-top:15px; margin-bottom:10px; color:#333;}
+    section p, section ul {margin-bottom:15px;}
+    ul {list-style-type: disc; padding-left:20px;}
 
-        h2 {
-            color: #111;
-            margin-bottom: 15px;
-        }
+    /* Roadmap */
+    .roadmap {display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:20px; text-align:center; margin-bottom:20px;}
+    .roadmap .step {
+        background:#e9f2ff; 
+        padding:25px; 
+        border-radius:12px; 
+        font-weight:bold; 
+        cursor:pointer; 
+        transition: transform 0.3s, box-shadow 0.3s, background 0.3s, color 0.3s;
+    }
+    .roadmap .step:hover {
+        transform: translateY(-5px); 
+        box-shadow:0 8px 20px rgba(0,0,0,0.15); 
+        background:#0d6efd; 
+        color:#fff;
+    }
 
-        .roadmap {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            text-align: center;
-        }
+    /* Cards for team */
+    .team-cards {display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px;}
+    .team-card {background:#f0f8ff; padding:20px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s;}
+    .team-card:hover {transform: translateY(-5px);}
 
-        .roadmap div {
-            background: #eee;
-            padding: 20px;
-            border-radius: 10px;
-            font-weight: bold;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            background: #1a1a1a;
-            color: #fff;
-        }
-    </style>
+    /* Footer */
+    footer {text-align:center; padding:30px 20px; background:#0d6efd; color:#fff; margin-top:40px;}
+</style>
 </head>
-
 <body>
 
-    <header>
-        <h1>FraudX – AI Fraud Detection Platform</h1>
-        <p>Real-time Transaction Monitoring & Fraud Prevention</p>
-    </header>
+<header data-aos="fade-down">
+    <h1>FraudX – AI Fraud Detection Platform</h1>
+    <p>Real-time Transaction Monitoring & Advanced Fraud Prevention</p>
+</header>
 
-    <section>
-        <h2>1. Muammo → Yechim</h2>
-        <h3>Muammo</h3>
-        <p>Online to‘lovlar, banking tizimlari va elektron savdoda firibgarlik holatlari keskin oshgan. Ko‘plab
-            platformalarda real vaqtda firibgarlikni aniqlash qiyin, qo‘lda tekshirish esa sekin va samarasiz.</p>
+<section data-aos="fade-up">
+    <h2>1. Muammo → Yechim</h2>
+    <h3>Muammo</h3>
+    <p>So‘nggi yillarda online to‘lovlar, banking tizimlari va elektron savdoda firibgarlik holatlari sezilarli darajada oshdi. Ko‘plab platformalarda real vaqtda firibgarlikni aniqlash qiyin, qo‘lda tekshirish esa sekin va samarasi past.</p>
 
-        <h3>Yechim</h3>
-        <p>FraudX — AI asosidagi real-time fraud detection tizimi. U har bir tranzaksiyani o‘nlab parametrlar bo‘yicha
-            tahlil qilib, firibgarlik ehtimolini 0–1 orasida hisoblab beradi. Machine Learning model yordamida
-            millisekundlarda ogohlantirish beradi.</p>
-    </section>
+    <h3>Yechim</h3>
+    <p>FraudX — AI asosidagi real-time fraud detection tizimi. U har bir tranzaksiyani o‘nlab parametrlar bo‘yicha tahlil qiladi va firibgarlik ehtimolini 0–1 orasida aniqlaydi. Machine Learning modeli millisekundlarda ogohlantirish beradi va xavfsizlikni oshiradi.</p>
+</section>
 
-    <section>
-        <h2>2. Jamoa</h2>
-        <p><strong>Abror Hidoyatov – Full-Stack Developer</strong></p>
-        <ul>
-            <li>Backend: Python, FastAPI, Flask</li>
-            <li>Frontend: Vue 3, TypeScript, HTML/CSS</li>
-            <li>Database: MongoDB, PostgreSQL</li>
-            <li>Machine Learning: Scikit-Learn, Pandas, NumPy</li>
-            <li>AI Tools: OpenAI API, Google Colab, Jupyter</li>
-            <li>DevOps: Docker, GitHub Actions</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>3. Nima uchun men ushbu muammoni hal qila olaman?</h2>
-        <p>Men bir vaqtning o‘zida backend + frontend + machine learning qobiliyatiga egaman. FraudX loyihasi uchun
-            zarur barcha yo‘nalishlar (ML modeli yaratish, API yozish, admin panel, dashboard, monitoring, UI/UX)ni
-            mustaqil bajara olaman. Amaliy tajriba va ML jarayonlarini tushunish loyihani tez va sifatli yaratishimga
-            imkon beradi.</p>
-    </section>
-
-    <section>
-        <h2>4. Yo‘l xaritasi</h2>
-        <div class="roadmap">
-            <div>Idea</div>
-            <div>Prototype</div>
-            <div>MVP</div>
-            <div>Launched</div>
+<section data-aos="fade-up">
+    <h2>2. Jamoa</h2>
+    <div class="team-cards">
+        <div class="team-card">
+            <h3>Abror Hidoyatov</h3>
+            <p><strong>Full-Stack Developer</strong></p>
+            <ul>
+                <li>Backend: Python, FastAPI – real-time API yaratish</li>
+                <li>Frontend: Vue 3, TypeScript, HTML/CSS – interaktiv UI</li>
+                <li>Database: MongoDB, PostgreSQL – ma’lumotlar saqlash</li>
+                <li>ML: Scikit-Learn, Pandas, NumPy</li>
+                <li>AI Tools: OpenAI API, Google Colab</li>
+                <li>DevOps: Docker, GitHub Actions</li>
+            </ul>
         </div>
-        <p><br></p>
-        <ul>
-            <li><strong>Idea:</strong> Muammo, yechim, AI modelga bo‘lgan yondashuv.</li>
-            <li><strong>Prototype:</strong> Oddiy ML modeli + API + test ma’lumotlari.</li>
-            <li><strong>MVP:</strong> Real-time API, Dashboard, Transaction monitoring.</li>
-            <li><strong>Launched:</strong> Full security, CI/CD, optimallashtirish.</li>
-        </ul>
-    </section>
+    </div>
+</section>
 
-    <section>
-        <h2>5. Texnik reja – Yechimni qanday amalga oshiraman?</h2>
-        <h3>🔹 Bosqichlar</h3>
-        <ul>
-            <li>Data yig‘ish va tayyorlash</li>
-            <li>ML modeli yaratish (RandomForest / XGBoost)</li>
-            <li>Fraud detection API yozish (FastAPI)</li>
-            <li>Real-time webhooklar qo‘llab-quvvatlash</li>
-            <li>Dashboard + monitoring tizimi (Vue 3)</li>
-            <li>Admin panel (transactions, analytics, logs)</li>
-            <li>Docker + Deployment (Railway / Render / VPS)</li>
-        </ul>
+<section data-aos="fade-up">
+    <h2>3. Nima uchun men ushbu muammoni hal qila olaman?</h2>
+    <p>Men bir vaqtning o‘zida backend, frontend va machine learning ko'nikmasiga egaman. FraudX loyihasi uchun zarur barcha yo‘nalishlarni mustaqil bajara olaman. Murakkab full-stack va ML loyihalarni muvaffaqiyatli amalga oshirish tajribasi loyihani tez va sifatli yaratishga imkon beradi.</p>
+</section>
 
-        <h3>🔹 Texnologiyalar</h3>
-        <ul>
-            <li>Python, FastAPI</li>
-            <li>Scikit-Learn, Pandas, NumPy</li>
-            <li>MongoDB yoki PostgreSQL</li>
-            <li>Vue 3 + TypeScript</li>
-            <li>Docker, GitHub Actions</li>
-        </ul>
+<section data-aos="fade-up">
+    <h2>4. Yo‘l xaritasi</h2>
+    <div class="roadmap">
+        <div class="step" data-info="Muammo va yechimni aniqlash, AI modelga yondashuvni rejalashtirish">Idea</div>
+        <div class="step" data-info="Oddiy ML modeli + API + test ma’lumotlari">Prototype</div>
+        <div class="step" data-info="Real-time API, Dashboard, Transaction monitoring">MVP</div>
+        <div class="step" data-info="To‘liq xavfsizlik, CI/CD, optimallashtirish">Launched</div>
+    </div>
+    <p id="step-info" style="margin-top:20px; font-weight:bold; color:#000; font-size:1.1rem; text-align:center; background:#f0f0f0; padding:15px; border-radius:10px; transition:all 0.3s;"></p>
+</section>
 
-        <h3>🔹 AI vositalari</h3>
-        <ul>
-            <li>OpenAI – test generator, log tahlili, anomaly reasoning</li>
-            <li>Colab – modellarning treningi</li>
-            <li>AI-powered documentation</li>
-        </ul>
-    </section>
+<section data-aos="fade-up">
+    <h2>5. Texnik reja – Yechimni qanday amalga oshiraman?</h2>
+    <h3>🔹 Bosqichlar</h3>
+    <ul>
+        <li>Data yig‘ish va tayyorlash</li>
+        <li>ML modeli yaratish (RandomForest / XGBoost)</li>
+        <li>Fraud detection API yozish (FastAPI)</li>
+        <li>Real-time webhooklar va monitoring tizimi</li>
+        <li>Dashboard + analytics (Vue 3)</li>
+        <li>Admin panel (transactions, logs, analytics)</li>
+        <li>Docker + Deployment (Railway / Render / VPS)</li>
+    </ul>
 
-    <footer>
-        © 2025 FraudX – AI Fraud Detection. All rights reserved.
-    </footer>
+    <h3>🔹 Texnologiyalar</h3>
+    <ul>
+        <li>Python, FastAPI</li>
+        <li>Scikit-Learn, Pandas, NumPy</li>
+        <li>MongoDB yoki PostgreSQL</li>
+        <li>Vue 3 + TypeScript</li>
+        <li>Docker, GitHub Actions</li>
+    </ul>
+
+    <h3>🔹 AI vositalari</h3>
+    <ul>
+        <li>OpenAI – test generator, log tahlili, anomaly detection</li>
+        <li>Colab – modellarning treningi</li>
+        <li>AI-powered documentation</li>
+    </ul>
+</section>
+
+<footer data-aos="fade-up">
+    © 2025 FraudX – AI Fraud Detection. All rights reserved.
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({duration:1000, once:true});
+
+  // Interactive roadmap
+  const steps = document.querySelectorAll('.roadmap .step');
+  const info = document.getElementById('step-info');
+
+  steps.forEach(step => {
+      step.addEventListener('click', () => {
+          info.textContent = step.getAttribute('data-info');
+          // Qisqa animation
+          info.style.background = "#e0e0e0";
+          setTimeout(() => { info.style.background = "#f0f0f0"; }, 300);
+      });
+  });
+</script>
 
 </body>
-
 </html>
